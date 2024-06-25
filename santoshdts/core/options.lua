@@ -11,13 +11,18 @@ opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
-opt.wrap = false
-
+opt.wrap = true
+opt.textwidth = 80
+opt.scrolloff = 8
+opt.signcolumn = "yes"
+opt.colorcolumn = "80"
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 opt.cursorline = true
+opt.hlsearch = false
+opt.incsearch = true
 
 -- turn on termguicolors for tokyonight colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
