@@ -15,7 +15,7 @@ opt.wrap = true
 opt.textwidth = 80
 opt.scrolloff = 8
 opt.signcolumn = "yes"
-opt.colorcolumn = "80"
+opt.colorcolumn = "100"
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
