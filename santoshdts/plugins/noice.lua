@@ -10,6 +10,22 @@ return {
 		--   If not available, we use `mini` as the fallback
 		"rcarriga/nvim-notify",
 	},
+	opts = {
+		routes = {
+			{
+				filter = {
+					event = "msg_show",
+					any = {
+						{ find = "%d+L, %d+B" },
+						{ find = "; after #%d+" },
+						{ find = "; before #%d+" },
+						{ find = "fewer lines" },
+					},
+				},
+				view = "mini",
+			},
+		},
+	},
 	config = function()
 		require("noice").setup({
 			lsp = {
